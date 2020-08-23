@@ -1,0 +1,14 @@
+#header {
+    background-image: url("images/bg-hero-desktop.svg");
+    min-height: 700px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin-right: 50px;
+    margin-left: 50px;
+}
