@@ -1,14 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap');
+
+body {
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+* {
+     /* using border box so that it's width */
+    /* wont increase if padding or border is added */
+    box-sizing: border-box;
+}
 #header {
     background-image: url("images/bg-hero-desktop.svg");
+    background-size: cover;
+    background-position: center center;
+    background-color: hsl(193, 100%, 96%);
+    padding: 40px 0;
     min-height: 700px;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
+img {
+    max-width: 100%;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex > div {
+    flex: 1;
+}
+
+/* all direct children should be flex 1 */
+/* or .flex > * { */
+    /* flex: 1 */
+/* } */
+
 .container {
-    margin-right: 50px;
-    margin-left: 50px;
+    /* uses the whole screen for smaller screen sizes */
+    /* but limits to 1000px for bigger screen sizes */
+    
+    max-width: 100%;
+    width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+/* Button */
+
+.btn {
+    padding: 15px 60px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    box-sizing: 0 0 10px rgb(0, 0, 0, 0.15);
+    outline: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.btn-primary {
+    background-color: hsl(322, 100%, 66%);
+    color: #ffffff;
+}
+.btn:hover {
+    color: #645f5f;
+}
+
+/* BOX */
+
+.box {
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+    padding: 60px;
+}
+
+.box img {
+    width: 80%;
+}
+
+.center {
+    text-align: center;
+}
+.small-box {
+    max-width: 802px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-bottom: -50%;
+
+}
+
+
+/* footer */
+
+footer {
+    padding: 180px 0 60px;
+    color: #ffffff;
+    background-color: hsl(192, 100%, 9%);
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+.icon {
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #ffffff;
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
 }

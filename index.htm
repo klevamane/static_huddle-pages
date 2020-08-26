@@ -3,57 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Huddle</title>
 </head>
 <body>
     <header id="header">
         <div class="container">
-            <nav>
+            <nav class="flex">
                 <img src="./images/logo.svg" alt="" srcset="">
                 <button class="btn btn-secondary">Try it for free</button>
             </nav>
-            <h1>Build The Community Your Fans will Love</h1>
-            <p>Huddle re-imagines the way we build communities. You have <br>
-                a voice, but so does your audience. Create connections with <br>
-                your users as you engage in genuine discussions.
-            </p>
-            <button>Get Statarted for free</button>
-            
+            <div class="flex">
+                <div>
+                    <h1>Build The Community Your Fans will Love</h1>
+                    <p>Huddle re-imagines the way we build communities. You have <br>
+                    a voice, but so does your audience. Create connections with <br>
+                    your users as you engage in genuine discussions.
+                </p>
+                <button class="btn btn-primary">Get Statarted for free</button>
+                </div>
+                <div>
+                    <img src="./images/illustration-mockups.svg" alt="" srcset="">
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <div class="box">
-            <h3>Grow Togthere</h3>
-            <p>Generate meaningul discussions with your audience and <br>
-                build a strong loyal community. Think of the insightful <br>
-                conversations you miss out on with a feedback form
-            </p>
-            <img src="" alt="">
+        <div class="container">
+        <div class="box flex">
+            <div>
+                <h2>Grow Togthere</h2>
+                <p>Generate meaningul discussions with your audience and <br>
+                    build a strong loyal community. Think of the insightful <br>
+                    conversations you miss out on with a feedback form
+                </p>
         </div>
-        <div class="box">
-            <h3>Grow Togthere</h3>
-            <p>Generate meaningul discussions with your audience and <br>
-                build a strong loyal community. Think of the insightful <br>
-                conversations you miss out on with a feedback form
-            </p>
-            <img src="" alt="">
+        <div>
+            <img src="./images/illustration-grow-together.svg" alt="">
         </div>
+        </div>
+        <div class="box flex">
+            <div>
+                <img src="./images/illustration-flowing-conversation.svg" alt="">
+            </div>
+            <div>
+                <h2>Flowing Conversations</h2>
+                <p>You wouldn't paginate a conversation in real life, so why do<br>
+                it online? Our threads have just in time loading for a more natural<br>
+                flow
+                </p>
+            </div>
+        </div>
+        <div class="box flex">
+            <div>
+                <h2>Your Users</h2>
+                <p>It takes no time at all to integrate Huddle with your app's<br>
+                    authentication solution means once signed in to<br>
+                    your app, your users can start chatting immediately
+                </p>
+        </div>
+        <div>
+            <img src="./images/illustration-your-users.svg" alt="">
+        </div>
+        </div>
+    </div>
     </main>
-
-    <div class="box">
-        <h2>Ready To Build Your Community?</h2>
-        <button class="btn btn-primary btn-big">Get Started For Free</button>
+    <div class="container center">
+        <div class="box small-box">
+            <h1>Ready To Build Your Community?</h1>
+            <button class="btn btn-primary btn-big">Get Started For Free</button>
+        </div>
     </div>
 
+    
     <footer>
-        <img src="./images/logo.svg" alt="logo">
+        <div class="container">
+        <img src="./images/logo_white.svg" alt="logo">
         <div class="flex">
             <div>
                 <ul>
-                    <li>Some good lorem ipsum</li>
-                    <li>+234-802-578-2212</li>
-                    <li>example@email.com</li>
+                    <li><i class="fas fa-map-marker-alt mr20"></i>Some good lorem ipsum</li>
+                    <li><i class="fas fa-phone-alt mr20"></i>+234-802-578-2212</li>
+                    <li><i class="fas fa-envelope mr20"></i></i>example@email.com</li>
                 </ul>
             </div>
             <div>
@@ -71,13 +104,14 @@
                 </ul>
             </div>
             <div>
-                <ul>
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#">twitter</a></li>
-                    <li><a href="#">instagram</a></li>
+                <ul style="display: inline-flex;">
+                    <li><a href="#"><i class="icon fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="icon fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
+    </div>
     </footer>
 </body>
 </html>
