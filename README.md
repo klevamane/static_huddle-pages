@@ -1,5 +1,5 @@
-Solution live demo:
-https://minadndai.github.io/huddlelandingpage/
+Live demo:
+https://klevamane.github.io/static_huddle-pages/
 
 
 
